@@ -23,7 +23,7 @@ import { Formik } from 'formik';
 // project import
 import useAuth from 'hooks/useAuth';
 import useScriptRef from 'hooks/useScriptRef';
-// import FirebaseSocial from './FirebaseSocial';
+import FirebaseSocial from './FirebaseSocial';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
 import { useIntl } from 'react-intl'
@@ -222,9 +222,9 @@ const AuthLogin = () => {
                       {intl.formatMessage({id: 'support'})}
                     </Link> </Typography>
               </Grid>
-              {/* <Grid item xs={12}>
+              <Grid item xs={12}>
                 <FirebaseSocial />
-              </Grid> */}
+              </Grid>
             </Grid>
           </form>
         )}

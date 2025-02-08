@@ -5,9 +5,9 @@ import { Grid, Stack, Typography } from '@mui/material';
 
 // project import
 // import useAuth from 'hooks/useAuth';
-// import AuthWrapper from 'sections/auth/AuthWrapper';
+import AuthWrapper from 'sections/auth/AuthWrapper';
 import FirebaseRegister from 'sections/auth/auth-forms/AuthRegister';
-import AuthRegisterWrapper from 'sections/auth/AuthRegister';
+// import AuthRegisterWrapper from 'sections/auth/AuthRegister';
 import { useIntl } from 'react-intl'
 
 
@@ -20,7 +20,7 @@ const Register = () => {
   
 
   return (
-    <AuthRegisterWrapper>
+    <AuthWrapper>
       <Grid container spacing={3} style={{ width: '100%', marginLeft: '0px'}}>
         <Grid item xs={12} style={{paddingLeft: 0}}>
           <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mb: { xs: -0.5, sm: 0.5 } }}>
@@ -41,7 +41,7 @@ const Register = () => {
           <FirebaseRegister />
         </Grid>
       </Grid>
-    </AuthRegisterWrapper>
+    </AuthWrapper>
   );
 };
 

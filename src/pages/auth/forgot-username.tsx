@@ -5,8 +5,8 @@ import { Grid, Stack, Typography } from '@mui/material';
 
 // project import
 // import useAuth from 'hooks/useAuth';
-// import AuthWrapper from 'sections/auth/AuthWrapper';
-import AuthPasswordWrapper from 'sections/auth/AuthPassword';
+import AuthWrapper from 'sections/auth/AuthWrapper';
+// import AuthPasswordWrapper from 'sections/auth/AuthPassword';
 import { useIntl } from 'react-intl'
 import AuthForgotUsername from 'sections/auth/auth-forms/AuthForgotUsername';
 
@@ -17,7 +17,7 @@ const ForgotUsername = () => {
   const intl = useIntl()
 
   return (
-    <AuthPasswordWrapper>
+    <AuthWrapper>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mb: { xs: -0.5, sm: 0.5 } }}>
@@ -31,7 +31,7 @@ const ForgotUsername = () => {
           <AuthForgotUsername />
         </Grid>
       </Grid>
-    </AuthPasswordWrapper>
+    </AuthWrapper>
   );
 };
 
